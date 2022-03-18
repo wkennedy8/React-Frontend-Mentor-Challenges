@@ -1,0 +1,134 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  font-family: 'Outfit';
+}
+
+/* COLORS */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --background-blue: hsl(217, 54%, 11%);
+  --card-blue: hsl(216, 50%, 16%);
+  --line-blue: hsl(215, 32%, 27%);
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-blue);
+}
+
+.card-container {
+  height: 32rem;
+  width: 18rem;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  background-color: var(--card-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-container--image {
+  padding-bottom: 30px;
+}
+
+.card-container img {
+  height: 18rem;
+  align-self: center;
+  border-radius: 0.4rem;
+  object-fit: contain;
+}
+
+.text-container {
+  /* padding: 0.5rem 0; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text-container h2 {
+  font-size: 20px;
+  color: var(--white);
+  font-weight: 600;
+  font-family: 'Outfit' sans-serif;
+  letter-spacing: 0.2px;
+  /* margin: 0.25rem 0; */
+}
+
+.text-container .desc {
+  color: var(--soft-blue);
+  font-weight: 300;
+  margin: 0.75rem 0;
+  line-height: 24px;
+}
+
+.price-time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.left,
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.left p,
+.right p {
+  margin: 0 0.5rem;
+  color: var(--cyan);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.right p {
+  color: var(--soft-blue);
+  font-weight: 300;
+}
+
+.line {
+  /* height: 5px; */
+  margin-top: 1.2rem;
+  width: 100%;
+  border: 0.5px solid var(--line-blue);
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  margin: 1rem 0;
+}
+
+.card-footer img {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+  margin-right: 1rem;
+}
+
+.card-footer p {
+  color: var(--soft-blue);
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.card-footer span {
+  color: var(--white);
+}

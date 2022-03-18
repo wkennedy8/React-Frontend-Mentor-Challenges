@@ -163,4 +163,5 @@ p {
 
 .card-footer span {
   color: var(--white);
+  cursor: pointer;
 }
